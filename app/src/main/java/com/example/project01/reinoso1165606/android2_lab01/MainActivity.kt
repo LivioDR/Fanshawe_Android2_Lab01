@@ -1,5 +1,6 @@
 package com.example.project01.reinoso1165606.android2_lab01
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -31,6 +32,10 @@ class MainActivity : AppCompatActivity(), SurveyFragment.SendToActivity {
             surveyFrag.show(supportFragmentManager, "survey")
         }
 
+        val viewInstructionBtn = findViewById<Button>(R.id.instructionsBtn)
+        viewInstructionBtn.setOnClickListener {
+            startActivity(Intent(this,InstructionsActivity::class.java))
+        }
     }
 
     override fun selectOption(option:Int?){

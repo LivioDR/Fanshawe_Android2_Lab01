@@ -4,4 +4,5 @@
     <string name="take_survey">Take survey</string>
     <string name="survey_title">Please make a choice</string>
     <string name="created_by_livio_reinoso">created by Livio Reinoso</string>
+    <string name="description_placeholder">Select a level to view its description</string>
 </resources>
